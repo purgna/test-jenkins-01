@@ -1,0 +1,12 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!--https://logback.qos.ch/manual/layouts.html-->
+            <pattern>%highlight(%d{dd-MMM-yyyy~HH:mm:ss.SSS} [%r] [%thread] %-5level %logger{36} [%M %L] - %msg%n)
+            </pattern>
+        </encoder>
+    </appender>
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
