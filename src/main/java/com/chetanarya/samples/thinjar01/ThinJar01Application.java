@@ -34,6 +34,6 @@ class ExampleRouter {
 class ExampleHandler {
     public Mono<ServerResponse> hello(ServerRequest request) {
         return ServerResponse.ok().contentType(MediaType.TEXT_PLAIN)
-                .body(BodyInserters.fromObject("Hello, Spring Webflux Example!!!!"));
+                .body(BodyInserters.fromObject("Hello, Chetan"));
     }
 }
